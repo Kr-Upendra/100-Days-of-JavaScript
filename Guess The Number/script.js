@@ -53,3 +53,7 @@ button.addEventListener("click", checkGuess);
 const showAlert = () => {
   alertBox.style.right = "3%";
 };
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") checkGuess();
+});
