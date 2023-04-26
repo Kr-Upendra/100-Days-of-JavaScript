@@ -11,7 +11,6 @@ const generateRandomNumber = () => {
 let count = 1;
 let resetButton;
 const randomNumber = generateRandomNumber();
-console.log(randomNumber);
 
 const setGameOver = () => {
   input.disabled = true;
