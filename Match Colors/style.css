@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+:root {
+  --fontFamily: "Lilita One", cursive;
+  --border: 1px solid rgba(0, 41, 29, 0.329);
+  --primaryColor: rgb(0, 146, 156);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 350px;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main__heading {
+  text-align: center;
+  padding: 0.75rem 2rem;
+  border-bottom: var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__heading i {
+  font-size: 2rem;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.main__heading a {
+  font-size: 2.75rem;
+  text-decoration: none;
+  color: var(--primaryColor);
+  letter-spacing: 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.container__box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputbox {
+  border: var(--border);
+  padding: 1rem;
+  border-radius: 0.65rem;
+}
+
+.color__box {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color__box:last-child {
+  margin-bottom: 0;
+}
+
+.color__box label {
+  margin-right: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--primaryColor);
+}
+
+.color__box input {
+  font-size: 1.55rem;
+  font-family: inherit;
+  padding: 0.45rem;
+  width: 80px;
+  letter-spacing: 1px;
+  border-radius: 0.5rem;
+  outline: none;
+  border: var(--border);
+  text-align: center;
+}
+
+.redColor input,
+.redIncrease,
+.redDecrease {
+  background-color: red;
+  color: white;
+}
+
+.greenColor input,
+.greenIncrease,
+.greenDecrease {
+  background-color: green;
+  color: white;
+}
+
+.blueColor input,
+.blueIncrease,
+.blueDecrease {
+  background-color: blue;
+  color: white;
+}
+
+.buttons {
+  height: 10.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 0.3rem 0;
+}
+
+.btn {
+  width: 70px;
+  aspect-ratio: 1;
+  font-size: 2rem;
+  border: var(--border);
+  font-family: var(--fontFamily);
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.instructions,
+.alertbox {
+  position: absolute;
+  top: 8%;
+  color: white;
+  background-color: rgb(66, 1, 1);
+  max-width: 300px;
+  border-radius: 0.5rem;
+  right: -100%;
+  padding: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  transition: right 0.5s ease-in-out;
+}
+
+.findall {
+  position: fixed;
+  top: 80%;
+}
+
+.findall__btn {
+  font-size: 1.25rem;
+  background-color: rgb(63, 182, 146);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  padding-right: 1.5rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .main {
+    height: 100%;
+  }
+
+  .main__heading a {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
