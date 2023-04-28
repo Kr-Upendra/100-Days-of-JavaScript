@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Any Info</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <nav class="navbar">
+        <a href="#">Save any Information</a>
+      </nav>
+      <div class="getbtn">
+        <button class="getinfo">Get Info</button>
+        <button class="seeids">See IDs</button>
+        <div class="showid"></div>
+      </div>
+      <div class="container">
+        <div class="inputbox">
+          <input
+            type="text"
+            class="infoname"
+            placeholder="Enter an ID"
+            required
+            autofocus="on"
+          />
+        </div>
+        <div class="inputbox">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Enter Firstname"
+            class="firstname"
+          />
+        </div>
+        <div class="inputbox">
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Enter lastname"
+            class="lastname"
+          />
+        </div>
+        <div class="inputbox">
+          <input type="number" name="age" placeholder="Enter Age" class="age" />
+        </div>
+        <div class="inputbox">
+          <input
+            type="text"
+            name="gender"
+            placeholder="Enter your Gender"
+            class="gender"
+          />
+        </div>
+        <div class="inputbox">
+          <input
+            type="text"
+            name="profession"
+            placeholder="Enter profession"
+            class="profession"
+          />
+        </div>
+        <div class="inputbox">
+          <textarea
+            placeholder="Some words about them.."
+            name="message"
+            cols="20"
+            rows="8"
+            class="message"
+          ></textarea>
+        </div>
+        <div class="inputbox">
+          <button class="submitbtn">SAVE</button>
+        </div>
+      </div>
+
+      <div class="informationbox">
+        <div class="information">
+          <div class="inputbox">
+            <input
+              type="text"
+              placeholder="Enter ID"
+              class="usersearchinput"
+              required
+            />
+            <button class="search">Search</button>
+          </div>
+          <div class="infoThing">
+            <div class="data-alert"></div>
+            <div class="infoThing__box">
+              <span>YOUR ID</span>
+              <h4 class="data-username"></h4>
+            </div>
+            <div class="infoThing__box">
+              <span>Firstname</span>
+              <h4 class="data-firstname"></h4>
+            </div>
+            <div class="infoThing__box">
+              <span>Lastname</span>
+              <h4 class="data-lastname"></h4>
+            </div>
+            <div class="infoThing__box">
+              <span>Age</span>
+              <h4 class="data-age"></h4>
+            </div>
+            <div class="infoThing__box">
+              <span>Gender</span>
+              <h4 class="data-gender"></h4>
+            </div>
+            <div class="infoThing__box">
+              <span>Profession</span>
+              <h4 class="data-profession"></h4>
+            </div>
+            <div class="infoThing__box">
+              <span>Message</span>
+              <h4 class="data-message"></h4>
+            </div>
+          </div>
+          <div class="closebtn">x</div>
+        </div>
+      </div>
+      <div class="github">
+        <a
+          href="https://github.com/Kr-Upendra/100-Days-of-JavaScript"
+          target="_blank"
+          class="github__link"
+          >Find All Projects</a
+        >
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
