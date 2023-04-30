@@ -9,3 +9,5 @@ Hello Everyone!
 ### Day 2. [Save Any Information](https://github.com/Kr-Upendra/100-Days-of-JavaScript/tree/main/Save%20Any%20Info)
 
 ### Day 3. [Match Colors](https://github.com/Kr-Upendra/100-Days-of-JavaScript/tree/main/Match%20Colors) (NOT YET COMPLETED!)
+
+### Day 4. [Secret Page]();
