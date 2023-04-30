@@ -10,4 +10,4 @@ Hello Everyone!
 
 ### Day 3. [Match Colors](https://github.com/Kr-Upendra/100-Days-of-JavaScript/tree/main/Match%20Colors) (NOT YET COMPLETED!)
 
-### Day 4. [Secret Page]();
+### Day 4. [Secret Page](https://github.com/Kr-Upendra/100-Days-of-JavaScript/tree/main/Secret%20Page)
