@@ -107,8 +107,24 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .not__signedin {
   text-align: center;
+}
+
+.gohome {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.gohome a {
+  padding: 0.5rem 1rem;
+  background-color: rgb(26, 255, 57);
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
 }

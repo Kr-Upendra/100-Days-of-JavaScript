@@ -16,19 +16,22 @@
       <div class="container__heading">
         <h1>Sign up form</h1>
       </div>
+      <div class="gohome">
+        <a href="home.html">Home</a>
+      </div>
       <div class="container__form">
-        <div class="container__form--box">
+        <form class="container__form--box signup__form" id="signup__form">
           <input
             type="text"
             name="username"
             required
-            class="username__input"
+            class="username__input--signup"
             placeholder="Enter your username"
           />
           <input
             type="email"
             name="email"
-            class="email__input"
+            class="email__input--signup"
             placeholder="Enter your email"
             required
           />
@@ -36,16 +39,42 @@
             type="password"
             name="password"
             placeholder="Enter your password"
-            class="password__input"
+            class="password__input--signup"
             required
           />
-          <input type="submit" value="Sign up" class="submit__btn" />
-          <span class="not__signedin">
-            Already a user ?
-            <a href="./signin.html">Sign in</a>
-          </span>
-        </div>
+          <input
+            type="submit"
+            value="Sign up"
+            class="submit__btn signup__btn"
+          />
+        </form>
+        <span class="not__signedin">
+          Already a user ?
+          <a href="./signin.html">Sign in</a>
+        </span>
       </div>
     </div>
   </body>
+  <script>
+    const signupForm = document.getElementById("signup__form");
+    const usernameInput = document.querySelector(".username__input--signup");
+    const emailInput = document.querySelector(".email__input--signup");
+    const passwordInput = document.querySelector(".password__input--signup");
+
+    signupForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const username = usernameInput.value;
+      const email = emailInput.value;
+      const password = passwordInput.value;
+
+      const newuser = {
+        username,
+        email,
+        password,
+      };
+
+      localStorage.setItem(email, JSON.stringify(newuser));
+      window.location.href = "secret.html";
+    });
+  </script>
 </html>
