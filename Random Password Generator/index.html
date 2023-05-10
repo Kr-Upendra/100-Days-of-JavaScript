@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Manager | Random Password Generator</title>
+    <link rel="stylesheet" href="root.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h3>Random Password Generator</h3>
+      </div>
+      <div class="hero">
+        <div class="password__area">
+          <input
+            class="password__input"
+            type="text"
+            value="Click on Generate"
+            disabled
+            id="passwordInput"
+          />
+          <i class="fas fa-clipboard"></i>
+        </div>
+        <div class="password__length common">
+          <span>Password Length</span>
+          <select name="length" id="length">
+            <option value="8">8</option>
+            <option value="12">12</option>
+            <option value="16">16</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+        <div class="include__symbols common">
+          <span>Include Symbols</span>
+          <input type="checkbox" name="symbol" id="symbol" />
+        </div>
+        <div class="include__numbers common">
+          <span>Include Numbers</span>
+          <input type="checkbox" name="numbers" id="numbers" />
+        </div>
+      </div>
+      <div class="btn__box">
+        <button class="btn">Generate</button>
+      </div>
+    </div>
+
+    <div class="alert__box">
+      <div class="alert__message">
+        <h4>Please find the other links at localhost webcoder</h4>
+      </div>
+      <div class="alert__btn">
+        <button class="stop__btn">OKAY</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
