@@ -11,3 +11,5 @@ Hello Everyone!
 ### Third Project. [Match Colors](https://github.com/Kr-Upendra/100-JavaScript-Beginners-Projects/tree/main/Match%20Colors) (NOT YET COMPLETED!)
 
 ### Fourth Project. [Secret Page](https://github.com/Kr-Upendra/100-JavaScript-Beginners-Projects/tree/main/Secret%20Page)
+
+### Fifth Project. [Secret Page](https://github.com/Kr-Upendra/100-JavaScript-Beginners-Projects/tree/main/Random%20Password%20Generator)
