@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(56, 0, 82);
+  height: 100vh;
+  font-family: "Macondo", cursive;
+  min-width: 400px;
+}
+
+.navbar {
+  padding: 1.25rem 4rem;
+  text-align: center;
+  border-bottom: 2px solid rgb(49, 49, 49);
+}
+
+.navbar h3 {
+  font-size: 2.25rem;
+  color: rgb(255, 255, 255);
+}
+
+.colorCode {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.colorCode__value {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: rgb(14, 43, 44);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: default;
+  font-weight: 900;
+}
+
+.container {
+  margin-top: 4rem;
+  padding: 1rem 10rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.color__box {
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.548) 0 5px 10px 0;
+  transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.color__box:select {
+  background-color: #000;
+}
+
+.color__box:hover {
+  box-shadow: rgba(201, 235, 255, 0.329) 0 25px 50px 0;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar h3 {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding: 1rem 1rem;
+  }
+}
