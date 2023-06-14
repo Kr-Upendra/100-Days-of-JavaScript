@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Fresca&display=swap");
+
+:root {
+  --FontFamily: "Fresca", sans-serif;
+  --primaryWhite: #fff;
+  --primaryBlack: #000;
+  --headerBtnBg: linear-gradient(to right, rgb(66, 8, 133), rgb(0, 0, 121));
+  --bodyBg: linear-gradient(
+    to right,
+    rgb(36, 36, 49),
+    rgb(45, 34, 53),
+    rgb(42, 7, 51)
+  );
+  --headerBg: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.575),
+      rgba(0, 0, 0, 0.829)
+    ),
+    url("img/foods-header.png");
+  --sectionBg: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.575),
+      rgba(0, 0, 0, 0.829)
+    ),
+    url("img/bg_1.png");
+  --mobNavBG: rgba(0, 0, 0, 0.11);
+}
+
+/* //////////////// TYPOGRAPHY ///////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--FontFamily);
+  min-width: 400px;
+  min-height: 100vh;
+  width: 100%;
+  background-image: var(--bodyBg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--primaryWhite);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ///////////////// HEADER ////////////////// */
+
+.header {
+  height: 100vh;
+  width: inherit;
+  background-image: var(--headerBg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 3rem;
+}
+
+/* ////////////////// NAVBAR /////////////////// */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.navbar__logo {
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.navbar__bars {
+  text-align: right;
+  cursor: pointer;
+  display: none;
+}
+
+.el__bar {
+  transition: all 0.4s ease-in-out;
+  width: 20px;
+  height: 3px;
+  border-radius: 3rem;
+  background-color: var(--primaryWhite);
+}
+
+.el__bar:nth-child(2) {
+  margin: 4px 0;
+  width: 15px;
+  margin-left: auto;
+}
+
+.navbar__bars[data-menu="true"] .el__bar:first-child {
+  transform-origin: right;
+  transform: rotate(320deg);
+}
+
+.navbar__bars[data-menu="true"] .el__bar:last-child {
+  transform-origin: right;
+  transform: rotate(-320deg);
+}
+
+.navbar__bars[data-menu="true"] .el__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__links {
+  display: flex;
+}
+
+.navbar__links--lies {
+  margin-right: 1rem;
+}
+
+.el__link {
+  font-size: 1.15rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 3rem;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.el__link:hover {
+  background-color: var(--primaryWhite);
+  color: var(--primaryBlack);
+}
+
+.navbar__links--lies:last-child {
+  margin-right: 0;
+}
+
+/* ////////////////// HEADER CONTENT  ///////////////// */
+
+.header__content {
+  margin-top: 7rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.header__content--heading h2 {
+  font-size: 5rem;
+  color: var(--primaryWhite);
+}
+
+.header__content--para {
+  margin: 2rem 0 4rem;
+}
+
+.header__content--para p {
+  font-size: 1.25rem;
+  color: var(--primaryWhite);
+}
+
+.btn {
+  border-radius: 3rem;
+  text-transform: uppercase;
+}
+
+.header__btn {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  background-image: var(--headerBtnBg);
+  transition: letter-spacing 0.4s ease-in-out;
+}
+
+.header__btn:hover {
+  letter-spacing: 5px;
+}
+
+.el-find-btn {
+  margin-right: 1rem;
+}
+
+.el-order-btn {
+  margin-left: 1rem;
+}
+
+/* //////////////// RECIPES SECTION ///////////////// */
+
+.section {
+  padding: 3rem;
+  background-image: var(--sectionBg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section__heading {
+  padding: 1rem 0;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section__heading h3 {
+  font-size: 3rem;
+  color: var(--primaryWhite);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section__heading h3::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  content: "";
+  width: 30%;
+  height: 3px;
+  background-color: var(--primaryWhite);
+  transform: translate(-50%, 0);
+}
+
+.section__heading p {
+  font-size: 1.05rem;
+  color: var(--primaryWhite);
+}
+
+.container {
+  margin-bottom: 2rem;
+  padding: 2rem 6rem;
+  /* position: relative; */
+  overflow-x: hidden;
+}
+
+.card {
+  width: 320px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 0.5rem;
+  /* position: absolute; */
+  display: inline-block;
+}
+
+/* //////////// MEDIA QUERY //////////// */
+@media (max-width: 900px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .navbar__bars {
+    display: block;
+  }
+
+  .navbar__links {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    text-align: center;
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+    background-color: var(--mobNavBG);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .navbar__links--lies {
+    margin: 0.75rem 0;
+  }
+
+  .header__content--heading h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__content--heading h2 {
+    font-size: 3rem;
+  }
+
+  .section__heading h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__content {
+    margin-top: 10rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .header__content--heading h2 {
+    font-size: 2.25rem;
+  }
+
+  .header__content--para p {
+    font-size: 0.95rem;
+  }
+
+  .header__btn {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .section__heading h3 {
+    font-size: 1.55rem;
+  }
+
+  .section__heading p {
+    font-size: 1rem;
+  }
+}
