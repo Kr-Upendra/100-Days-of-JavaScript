@@ -9,24 +9,44 @@
     rgb(66, 8, 133) 40%,
     rgb(0, 0, 121) 100%
   );
+
+  --scrollbar: linear-gradient(rgb(66, 8, 133) 40%, rgb(0, 0, 121) 100%);
+
   --bodyBg: linear-gradient(
     to right,
     rgb(36, 36, 49),
     rgb(45, 34, 53),
     rgb(42, 7, 51)
   );
+
   --headerBg: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.575),
       rgba(0, 0, 0, 0.829)
     ),
     url("img/foods-header.png");
-  --sectionBg: linear-gradient(
+
+  --tasteNewBg: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.575),
       rgba(0, 0, 0, 0.829)
     ),
     url("img/bg_1.png");
+
+  --resourceBG: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.575),
+      rgba(0, 0, 0, 0.829)
+    ),
+    url("img/resource.png");
+
+  --footerBg: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.884),
+      rgba(0, 0, 0, 0.829)
+    ),
+    url("img/footerBg.png");
+
   --mobNavBG: rgba(0, 0, 0, 0.11);
 }
 
@@ -64,6 +84,19 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primaryBlack);
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: var(--scrollbar);
+  border-radius: 3rem;
 }
 
 /* ///////////////// HEADER ////////////////// */
@@ -135,12 +168,13 @@ ul {
 
 .el__link {
   font-size: 1.15rem;
-  padding: 0.35rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 3rem;
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-.el__link:hover {
+.el__link:hover,
+.active {
   background-color: var(--primaryWhite);
   color: var(--primaryBlack);
 }
@@ -200,10 +234,13 @@ ul {
 
 .section {
   padding: 3rem;
-  background-image: var(--sectionBg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.recipe__section {
+  background-image: var(--tasteNewBg);
 }
 
 .section__heading {
@@ -231,7 +268,7 @@ ul {
 }
 
 .section__heading p {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: var(--primaryWhite);
 }
 
@@ -257,7 +294,7 @@ ul {
   border-radius: 1rem;
   object-fit: contain;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
   display: none;
 }
 
@@ -351,6 +388,156 @@ ul {
   right: 2%;
 }
 
+/* /////////////// RESOURCES /////////////////// */
+
+.resourse__section {
+  background-image: var(--resourceBG);
+}
+
+.resources {
+  padding: 2rem;
+}
+
+.resources__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resources__container--card {
+  padding: 1.5rem 1rem;
+  width: 800px;
+  max-width: 100%;
+  margin: 1rem 0;
+  border-radius: 0.3rem;
+  background-color: rgba(246, 197, 255, 0.11);
+  backdrop-filter: blur(2px);
+}
+
+.details {
+  display: flex;
+}
+
+.details__name {
+  margin-right: auto;
+}
+
+.details__name .el__name {
+  font-size: 1.15rem;
+  color: var(--primaryWhite);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.details__viewbtn .el__viewbtn {
+  padding: 0.55rem 1rem;
+  border-radius: 3rem;
+  background-image: var(--headerBtnBg);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.resources__container--card:first-child {
+  margin-top: 0;
+}
+
+/* //////////// FOOTER ////////////// */
+
+.footer__section {
+  background-image: var(--footerBg);
+  position: relative;
+}
+
+.footer__content {
+  display: flex;
+  gap: 2rem 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.footer__content--brand,
+.footer__content--links,
+.footer__content--company {
+  width: 280px;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.082);
+  backdrop-filter: blur(2px);
+}
+
+.footer__content--brand {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.082);
+  backdrop-filter: blur(2px);
+}
+
+.footer__content--brand img {
+  width: 200px;
+  aspect-ratio: 1;
+  margin-bottom: 1rem;
+}
+
+.footer__content--brand h4 {
+  font-size: 2rem;
+  color: var(--primaryWhite);
+}
+
+.footer__content--links,
+.footer__content--company {
+  padding: 3rem 2rem;
+}
+
+.footer__content--company h4,
+.footer__content--links h4 {
+  font-size: 1.25rem;
+  color: var(--primaryWhite);
+  font-weight: 500;
+}
+
+.footer__content--company ul,
+.footer__content--links ul {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer__content--company li,
+.footer__content--links li {
+  margin: 1rem 0;
+}
+
+.footer__content--company span,
+.footer__content--links span {
+  color: var(--primaryWhite);
+}
+
+.footer__content--company a,
+.footer__content--links a {
+  color: var(--primaryWhite);
+  font-size: 1.05rem;
+}
+
+.footer__copytext {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.082);
+  padding: 0.65rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__copytext span {
+  font-size: 0.9rem;
+  color: var(--primaryWhite);
+  font-weight: 400;
+}
+
+.footer__copytext span a {
+  color: aqua;
+}
+
 /* //////////// MEDIA QUERY //////////// */
 @media (max-width: 900px) {
   .header {
@@ -400,6 +587,10 @@ ul {
   .card__details--title {
     margin-bottom: 0;
   }
+
+  .footer__content {
+    justify-content: start;
+  }
 }
 
 @media (max-width: 700px) {
@@ -434,6 +625,19 @@ ul {
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.082);
     backdrop-filter: blur(5px);
+  }
+
+  .footer__content {
+    justify-content: center;
+  }
+
+  .footer__content--links,
+  .footer__content--company {
+    padding: 2rem;
+  }
+
+  .footer__content--company {
+    margin-bottom: 2rem;
   }
 }
 
