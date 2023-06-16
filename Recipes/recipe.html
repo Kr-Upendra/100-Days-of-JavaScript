@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="root.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img src="img/favicon.ico" alt="Logo" class="navbar__logo" />
+        <div class="navbar__bars" data-menu="false">
+          <div class="el__bar"></div>
+          <div class="el__bar"></div>
+          <div class="el__bar"></div>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__links--lies">
+            <a href="#" class="el__link active">Home</a>
+          </li>
+          <li class="navbar__links--lies">
+            <a href="#" class="el__link">Recipes</a>
+          </li>
+          <li class="navbar__links--lies">
+            <a href="#" class="el__link">Today's Recipes</a>
+          </li>
+          <li class="navbar__links--lies">
+            <a href="#" class="el__link">Order Food</a>
+          </li>
+          <li class="navbar__links--lies">
+            <a href="#" class="el__link">Signup</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mealSearch">
+        <div class="mealSearch__container">
+          <input
+            type="text"
+            placeholder="Search Food"
+            class="el-inputbox"
+            required
+            name="foodname"
+            id="foodname"
+          />
+          <button class="searchbtn">Search</button>
+        </div>
+      </div>
+    </header>
+    <section class="section food__section">
+      <div class="section__heading">
+        <h3>Here is your searched foods</h3>
+      </div>
+      <div class="foods">
+        <div class="foods__grid">
+          <div class="foods__grid--card">
+            <div class="foods__grid--card-img">
+              <img
+                src="https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg"
+                alt="Food Image"
+              />
+              <span class="el__fev" data-save="false">&#10084;</span>
+            </div>
+            <div class="foods__grid--card-details">
+              <div class="foods__grid--card-details__name">
+                <h4>Paneer Tikka</h4>
+              </div>
+              <div class="foods__grid--card-details__btn">
+                <button class="viewbtn">View More</button>
+              </div>
+            </div>
+          </div>
+          <div class="foods__grid--card">
+            <div class="foods__grid--card-img">
+              <img
+                src="https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg"
+                alt="Food Image"
+              />
+              <span class="el__fev" data-save="false">&#10084;</span>
+            </div>
+            <div class="foods__grid--card-details">
+              <div class="foods__grid--card-details__name">
+                <h4>Paneer Tikka</h4>
+              </div>
+              <div class="foods__grid--card-details__btn">
+                <button class="viewbtn">View More</button>
+              </div>
+            </div>
+          </div>
+          <div class="foods__grid--card">
+            <div class="foods__grid--card-img">
+              <img
+                src="https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg"
+                alt="Food Image"
+              />
+              <span class="el__fev" data-save="false">&#10084;</span>
+            </div>
+            <div class="foods__grid--card-details">
+              <div class="foods__grid--card-details__name">
+                <h4>Paneer Tikka</h4>
+              </div>
+              <div class="foods__grid--card-details__btn">
+                <button class="viewbtn">View More</button>
+              </div>
+            </div>
+          </div>
+          <div class="foods__grid--card">
+            <div class="foods__grid--card-img">
+              <img
+                src="https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg"
+                alt="Food Image"
+              />
+              <span class="el__fev" data-save="false">&#10084;</span>
+            </div>
+            <div class="foods__grid--card-details">
+              <div class="foods__grid--card-details__name">
+                <h4>Paneer Tikka</h4>
+              </div>
+              <div class="foods__grid--card-details__btn">
+                <button class="viewbtn">View More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section footer__section">
+      <div class="section__heading">
+        <h3>Know More About Us and our brand</h3>
+      </div>
+
+      <div class="footer__content">
+        <div class="footer__content--brand">
+          <img src="img/logo.jpg" alt="Brand" />
+          <h4>Food Finder</h4>
+        </div>
+        <div class="footer__content--links">
+          <h4>Services</h4>
+          <ul>
+            <li>
+              <span>— &nbsp;</span>
+              <a href="" class="footer__link"
+                >Recipe of the Day
+                <span class="footer__link--arrow">&#8594;</span>
+              </a>
+            </li>
+            <li>
+              <span>— &nbsp;</span>
+              <a href="#" class="footer__link"
+                >Recipes
+                <span class="footer__link--arrow">&#8594;</span>
+              </a>
+            </li>
+            <li>
+              <span>— &nbsp;</span>
+              <a href="" class="footer__link"
+                >Order Food
+                <span class="footer__link--arrow">&#8594;</span>
+              </a>
+            </li>
+            <li>
+              <span>— &nbsp;</span>
+              <a href="" class="footer__link"
+                >Search Restorent
+                <span class="footer__link--arrow">&#8594;</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content--company">
+          <h4>About Us</h4>
+          <ul>
+            <li>
+              <span>— &nbsp;</span
+              ><a href="#" class="footer__link"
+                >Our Team <span class="footer__link--arrow">&#8594;</span></a
+              >
+            </li>
+            <li>
+              <span>— &nbsp;</span
+              ><a href="#" class="footer__link"
+                >Services <span class="footer__link--arrow">&#8594;</span></a
+              >
+            </li>
+            <li>
+              <span>— &nbsp;</span
+              ><a href="#" class="footer__link"
+                >Works <span class="footer__link--arrow">&#8594;</span></a
+              >
+            </li>
+            <li>
+              <span>— &nbsp;</span
+              ><a href="#" class="footer__link"
+                >Career <span class="footer__link--arrow">&#8594;</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copytext">
+        <span
+          >&copy; 2023 | Made by
+          <a href="https://github.com/Kr-Upendra">Localhost Webcoder</a> and
+          Team</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Paneer Tikka",
+    "image": "img/paneer-tikka.jpg",
+    "sourceLink": "https://www.themealdb.com/api/json/v1/1/search.php?s=paneer",
+    "shortDesc": "Matar paneer recipe is a popular Indian Curry dish made with green peas and Paneer (Indian cottage cheese) in a base of onions, tomatoes, cashews, spices and herbs."
+  },
+  {
+    "name": "Burger Or Hamburger",
+    "image": "img/burger.jpg",
+    "sourceLink": "https://www.themealdb.com/api/json/v1/1/search.php?s=burger",
+    "shortDesc": "A hamburger, or simply burger, is a food consisting of fillings—usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll."
+  },
+  {
+    "name": "Pizza",
+    "image": "img/pizza.jpg",
+    "sourceLink": "https://themealdb.com/api/json/v1/1/search.php?s=pizza",
+    "shortDesc": "Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients."
+  },
+  {
+    "name": "Chicken Handi",
+    "image": "https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg",
+    "sourceLink": "https://www.themealdb.com/api/json/v1/1/search.php?s=chicken%20handi",
+    "shortDesc": "Handi chicken is a delicious dish made with chicken cooked on a low flame for a long time."
+  },
+  {
+    "name": "Baingan Bharta",
+    "image": "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg",
+    "sourceLink": "https://www.themealdb.com/api/json/v1/1/search.php?s=Baingan%20Bharta",
+    "shortDesc": "Baingan bharta or Baigan Chokha is an Indian dish prepared by mincing grilled eggplant and mixing it with tomato, onion, herbs and spices."
+  }
+]

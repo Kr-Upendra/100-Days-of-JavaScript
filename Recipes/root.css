@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Fresca&display=swap");
+
+:root {
+  --recipeHeaderPhoto: url("img/recipeHeader.jpg");
+  --FontFamily: "Fresca", sans-serif;
+  --primaryWhite: #fff;
+  --primaryBlack: #000;
+  --headerBtnBg: linear-gradient(
+    to right,
+    rgb(66, 8, 133) 40%,
+    rgb(0, 0, 121) 100%
+  );
+
+  --scrollbar: linear-gradient(rgb(66, 8, 133) 40%, rgb(0, 0, 121) 100%);
+
+  --bodyBg: linear-gradient(
+    to right,
+    rgb(36, 36, 49),
+    rgb(45, 34, 53),
+    rgb(42, 7, 51)
+  );
+
+  --headerBg: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.575),
+      rgba(0, 0, 0, 0.829)
+    ),
+    url("img/foods-header.jpg");
+
+  --tasteNewBg: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.575),
+      rgba(0, 0, 0, 0.829)
+    ),
+    url("img/bg_1.jpg");
+
+  --resourceBG: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.575),
+      rgba(0, 0, 0, 0.829)
+    ),
+    url("img/resource.jpg");
+
+  --footerBg: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.507),
+      rgba(0, 0, 0, 0.281)
+    ),
+    url("img/footerBg.jpg");
+
+  --foodSection: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.507),
+      rgba(0, 0, 0, 0.322)
+    ),
+    url("img2/food-section.png");
+
+  --mobNavBG: rgba(0, 0, 0, 0.11);
+}
