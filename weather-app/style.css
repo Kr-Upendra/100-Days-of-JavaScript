@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
+
+:root {
+  --fontFamily: "Sora", sans-serif;
+  --fontSize: 15px;
+  --primaryWhite: #fff;
+  --primaryBlack: #000;
+  --secondaryBlack: #202020;
+  --secondaryWhite: #c0c0c0;
+  --buttonColor: rgb(32, 240, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.575),
+      rgba(0, 0, 0, 0.432)
+    ),
+    url("/bg.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: var(--fontFamily);
+  font-size: var(--fontFamily);
+  min-width: 400px;
+  min-height: 100vh;
+}
+
+#app {
+  padding: 0 1rem 1rem 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 0.91rem;
+}
+
+.navbar {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.185);
+  backdrop-filter: blur(3px);
+}
+
+.navbar a {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--primaryWhite);
+}
+
+.main {
+  display: flex;
+  column-gap: 3rem;
+  padding: 2rem 0;
+}
+
+/* LEFT */
+
+.main__left {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.forcast-data {
+  padding: 1rem 0.35rem;
+  border-radius: 0.35rem;
+  background-color: rgba(0, 0, 0, 0.185);
+  backdrop-filter: blur(3px);
+  margin-bottom: 1rem;
+}
+
+.el-datatype {
+  color: var(--primaryWhite);
+  font-weight: 500;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+}
+
+.left__searchbox {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.left__input {
+  width: 100%;
+  padding: 0.65rem 0.45rem;
+  border-top-left-radius: 0.35rem;
+  border-bottom-left-radius: 0.35rem;
+  outline: none;
+  border: 2px solid transparent;
+  color: var(--secondaryBlack);
+}
+
+.left__button {
+  padding: 0 2rem;
+  cursor: pointer;
+  background-color: var(--buttonColor);
+  border: 2px solid var(--buttonColor);
+  outline: none;
+  color: var(--primaryBlack);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0.35rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.left__cityname {
+  margin: 1rem 0;
+  display: flex;
+  padding: 1rem 0.5rem;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.185);
+  backdrop-filter: blur(3px);
+  border-radius: 0.35rem;
+}
+
+.el-city {
+  margin-right: auto;
+  font-size: 1.1rem;
+  color: var(--primaryWhite);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.el-reload {
+  padding: 0.45rem 1rem;
+  font-size: 0.9rem;
+  background-color: var(--buttonColor);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.forcasts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.forcasts__list {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 70, 240, 0.096);
+  backdrop-filter: blur(3px);
+  box-shadow: rgba(0, 0, 0, 0.185) 0 10px 20px 0;
+  transition: all 0.5s ease-in;
+}
+
+.forcasts__list:hover {
+  transform: translateY(-15px);
+}
+
+.forcast__date {
+  display: flex;
+  align-items: center;
+}
+
+.forcast__date span {
+  color: var(--primaryWhite);
+  font-size: 0.9rem;
+}
+
+.el-date {
+  margin-right: auto;
+}
+
+.forcast__condition {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.el-image {
+  width: 100px;
+}
+
+.el-name {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--primaryWhite);
+}
+
+.about__day {
+  display: flex;
+}
+
+.about__day span {
+  font-size: 0.9rem;
+  color: var(--primaryWhite);
+}
+
+.el-sunrise,
+.el-sunset {
+  display: flex;
+  align-items: center;
+}
+
+.el-sunrise {
+  margin-right: auto;
+}
+
+.sun {
+  width: 20px;
+  margin-right: 0.35rem;
+}
+/* RIGHT */
+
+.main__right {
+  width: calc(100% - 2rem - 70%);
+  min-width: 330px;
+  margin: 0 auto;
+}
+
+.el-rightsearch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.el-rightinput {
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--secondaryBlack);
+  padding: 0.5rem 0.25rem;
+  border-top-left-radius: 0.35rem;
+  border-bottom-left-radius: 0.35rem;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.el-rightbtn {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--buttonColor);
+  border-top-right-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+  background-color: var(--buttonColor);
+  color: var(--primaryBlack);
+  text-transform: uppercase;
+}
+
+.weather-card {
+  border-radius: 0.3rem;
+  padding: 1.5rem 1rem;
+  background-color: rgba(4, 255, 255, 0.082);
+  backdrop-filter: blur(5px);
+}
+
+.city-details {
+  text-align: center;
+}
+
+.city-details span {
+  font-size: 1.25rem;
+  color: var(--primaryWhite);
+  letter-spacing: 1px;
+}
+
+.temp-details {
+  margin: 1.35rem 0;
+  text-align: center;
+}
+
+.el-icon {
+  width: 80px;
+}
+
+.el-temp {
+  margin-bottom: 0 !important;
+  font-size: 1.25rem !important;
+  color: var(--primaryWhite) !important;
+}
+
+.temp-details span {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+  color: var(--secondaryWhite);
+  letter-spacing: 1px;
+}
+
+.other-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.other-details span {
+  font-size: 0.9rem;
+  color: var(--secondaryWhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 1.25rem !important;
+  margin: 0.5rem 0 0 0;
+  color: var(--primaryWhite) !important;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1300px) {
+  .forcasts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1050px) {
+  .forcasts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .forcasts__list {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .main {
+    flex-direction: column-reverse;
+    row-gap: 3rem;
+  }
+
+  .left__button {
+    padding: 0 1rem;
+  }
+
+  .weather {
+    border-bottom: 2px solid var(--buttonColor);
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main__left,
+  .main__right {
+    width: 100%;
+  }
+}

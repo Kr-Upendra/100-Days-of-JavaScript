@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar">
+        <a href="#">Weather App</a>
+      </nav>
+      <section class="main">
+        <div class="main__left">
+          <div class="forcast-data">
+            <h3 class="el-datatype">Get Forcast Data</h3>
+          </div>
+          <div class="left__searchbox">
+            <input
+              type="text"
+              required
+              class="left__input"
+              placeholder="Enter City Name: eg: Allahabad"
+            />
+            <button type="button" class="left__button el__btn">Search</button>
+          </div>
+          <div class="left__cityname">
+            <h4 class="el-city">City: Lucknow</h4>
+            <span class="el-reload">Reload</span>
+          </div>
+          <div class="forcasts">
+            <div class="forcasts__list">
+              <div class="forcast__date">
+                <span class="el-date">2023-06-29</span>
+                <span class="el-curr-temp">31.6 C</span>
+              </div>
+              <div class="forcast__condition">
+                <img
+                  src="https://cdn.weatherapi.com/weather/64x64/day/308.png"
+                  alt="Weather Conditino Image"
+                  class="el-image"
+                />
+                <span class="el-name">Heavy rain</span>
+              </div>
+              <div class="about__day">
+                <span class="el-sunrise"
+                  ><img class="sun" src="/sunrise.png" alt="" /> 05:15 AM</span
+                >
+                <span class="el-sunset"
+                  ><img class="sun" src="/sunset.png" alt="" /> 07:14 PM</span
+                >
+              </div>
+            </div>
+            <div class="forcasts__list">
+              <div class="forcast__date">
+                <span class="el-date">2023-06-29</span>
+                <span class="el-curr-temp">31.6 C</span>
+              </div>
+              <div class="forcast__condition">
+                <img
+                  src="https://cdn.weatherapi.com/weather/64x64/day/308.png"
+                  alt="Weather Conditino Image"
+                  class="el-image"
+                />
+                <span class="el-name">Heavy rain</span>
+              </div>
+              <div class="about__day">
+                <span class="el-sunrise"
+                  ><img class="sun" src="/sunrise.png" alt="" /> 05:15 AM</span
+                >
+                <span class="el-sunset"
+                  ><img class="sun" src="/sunset.png" alt="" />07:14 PM</span
+                >
+              </div>
+            </div>
+            <div class="forcasts__list">
+              <div class="forcast__date">
+                <span class="el-date">2023-06-29</span>
+                <span class="el-curr-temp">31.6 C</span>
+              </div>
+              <div class="forcast__condition">
+                <img
+                  src="https://cdn.weatherapi.com/weather/64x64/day/308.png"
+                  alt="Weather Conditino Image"
+                  class="el-image"
+                />
+                <span class="el-name">Heavy rain</span>
+              </div>
+              <div class="about__day">
+                <span class="el-sunrise"
+                  ><img class="sun" src="/sunrise.png" alt="" /> 05:15 AM</span
+                >
+                <span class="el-sunset"
+                  ><img class="sun" src="/sunset.png" alt="" /> 07:14 PM</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__right">
+          <div class="forcast-data">
+            <h3 class="el-datatype">Current Data</h3>
+          </div>
+          <div class="el-rightsearch">
+            <input
+              type="text"
+              class="el-rightinput"
+              placeholder="Eg: Allahabad"
+              id="currentcity"
+              required
+            />
+            <button type="button" id="currentdata" class="el-rightbtn">
+              Search
+            </button>
+          </div>
+          <div class="weather">
+            <div class="weather-card">
+              <div class="city-details">
+                <span class="el-cityname">Lucknow, India</span>
+              </div>
+              <div class="temp-details">
+                <img
+                  src="https://cdn.weatherapi.com/weather/64x64/day/353.png"
+                  alt="Weather Icon"
+                  class="el-icon"
+                />
+                <span class="el-condition">Light Rain Shower</span>
+                <span class="el-temp">33.5 C</span>
+              </div>
+              <div class="other-details">
+                <span class="el-wind"
+                  >Wind Speed<span class="value">12.2 KPH</span>
+                </span>
+                <span class="el-wind"
+                  >Humidity<span class="value">58</span></span
+                >
+                <span class="el-wind"
+                  >Clouds<span class="value">58 %</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
