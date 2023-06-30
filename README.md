@@ -12,4 +12,6 @@ Hello Everyone!
 
 ### Fourth Project. [Secret Page](https://github.com/Kr-Upendra/100-JavaScript-Beginners-Projects/tree/main/Secret%20Page)
 
-### Fifth Project. [Secret Page](https://github.com/Kr-Upendra/100-JavaScript-Beginners-Projects/tree/main/Random%20Password%20Generator)
+### Fifth Project. [Random Password Generator](https://github.com/Kr-Upendra/100-JavaScript-Beginners-Projects/tree/main/Random%20Password%20Generator)
+
+### Sixth Project. [Weather App](https://github.com/Kr-Upendra/100-JavaScript-Beginners-Projects/tree/main/weather-app)
