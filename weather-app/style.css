@@ -61,6 +61,16 @@ input {
   color: var(--primaryWhite);
 }
 
+.el-dev {
+  position: fixed;
+  bottom: 8%;
+  right: 5%;
+  padding: 0.65rem 1.25rem;
+  border-radius: 3rem;
+  color: var(--primaryWhite);
+  background-image: linear-gradient(to right, rgb(75, 0, 226), rgb(69, 0, 97));
+}
+
 .main {
   display: flex;
   column-gap: 3rem;
@@ -149,7 +159,7 @@ input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 .forcasts__list {
@@ -170,6 +180,16 @@ input {
   align-items: center;
 }
 
+.tempbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.el-max {
+  margin-bottom: 0.35rem;
+}
+
 .forcast__date span {
   color: var(--primaryWhite);
   font-size: 0.9rem;
@@ -180,7 +200,7 @@ input {
 }
 
 .forcast__condition {
-  margin: 1rem 0;
+  margin: 1rem 0 2rem;
   text-align: center;
 }
 
@@ -229,13 +249,14 @@ input {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 
 .el-rightinput {
   width: 100%;
   font-size: 0.9rem;
   color: var(--secondaryBlack);
-  padding: 0.5rem 0.25rem;
+  padding: 0.7rem 0.25rem;
   border-top-left-radius: 0.35rem;
   border-bottom-left-radius: 0.35rem;
   outline: none;
@@ -243,7 +264,8 @@ input {
 }
 
 .el-rightbtn {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
   border: 2px solid var(--buttonColor);
   border-top-right-radius: 0.35rem;
   border-bottom-right-radius: 0.35rem;
@@ -260,7 +282,8 @@ input {
 }
 
 .city-details {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .city-details span {
@@ -310,6 +333,27 @@ input {
   font-size: 1.25rem !important;
   margin: 0.5rem 0 0 0;
   color: var(--primaryWhite) !important;
+}
+
+/* LOADER */
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.562);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primaryWhite);
+  font-size: 2rem;
+  display: none;
+}
+
+.loader::after {
+  content: "Loading...";
 }
 
 /* MEDIA QUERY */
