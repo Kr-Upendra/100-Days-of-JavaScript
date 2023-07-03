@@ -8,7 +8,7 @@ const forecastCityText = document.querySelector(".el-city");
 const forecastContainer = document.querySelector(".forcasts");
 const reloadForecastDetails = document.querySelector(".el-reload");
 const loader = document.querySelector(".loader");
-const apikey = "Get Your Own Bro!😒😎";
+const apikey = "60c27fe38fa948b98df55330232906";
 const baseUrl = "https://api.weatherapi.com/v1/";
 
 const showLoader = () => {
@@ -91,7 +91,7 @@ const showForecastDetails = async () => {
     const forecastHtmlCard = forecastData
       .map((value) => {
         return `
-            <div class="forcasts__list">
+        <div class="forcasts__list">
             <div class="forcast__date">
                 <span class="el-date">${value.date}</span>
                 <div class="tempbox">
@@ -101,9 +101,9 @@ const showForecastDetails = async () => {
             </div>
             <div class="forcast__condition">
                 <img
-                src="https:${value.day.condition.icon}"
-                alt="Weather Conditino Image"
-                class="el-image"
+                    src="https:${value.day.condition.icon}"
+                    alt="Weather Conditino Image"
+                    class="el-image"
                 />
                 <span class="el-name">${value.day.condition.text}</span>
             </div>
@@ -115,7 +115,7 @@ const showForecastDetails = async () => {
                 ><img class="sun" src="/sunset.png" alt="" />${value.astro.sunset}</span
                 >
             </div>
-            </div>
+        </div>
       `;
       })
       .join("");
