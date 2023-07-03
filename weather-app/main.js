@@ -9,7 +9,7 @@ const forecastContainer = document.querySelector(".forcasts");
 const reloadForecastDetails = document.querySelector(".el-reload");
 const allDayData = document.querySelector(".allday__data");
 const loader = document.querySelector(".loader");
-const apikey = "60c27fe38fa948b98df55330232906";
+const apikey = "USE YOUR API KEY BRO 😜";
 const baseUrl = "https://api.weatherapi.com/v1/";
 
 const showLoader = () => {
