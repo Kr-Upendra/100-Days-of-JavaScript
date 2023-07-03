@@ -7,6 +7,7 @@ const currentWeatherContainer = document.querySelector(".weather");
 const forecastCityText = document.querySelector(".el-city");
 const forecastContainer = document.querySelector(".forcasts");
 const reloadForecastDetails = document.querySelector(".el-reload");
+const allDayData = document.querySelector(".allday__data");
 const loader = document.querySelector(".loader");
 const apikey = "60c27fe38fa948b98df55330232906";
 const baseUrl = "https://api.weatherapi.com/v1/";
@@ -136,3 +137,34 @@ reloadForecastDetails.addEventListener("click", () => {
   showLoader();
   showForecastDetails();
 });
+
+const showAllDayForeCastData = () => {
+  for (let i = 0; i < 24; i++) {
+    const div = document.createElement("div");
+    const timeSpan = document.createElement("span");
+    const tempSpan = document.createElement("span");
+    const img = document.createElement("img");
+
+    img.setAttribute(
+      "src",
+      "https://cdn.weatherapi.com/weather/64x64/day/353.png"
+    );
+    img.setAttribute("alt", "Current Weather Image");
+
+    img.classList.add("data-img");
+    timeSpan.classList.add("data-time");
+    tempSpan.classList.add("data-temp");
+    div.classList.add("data");
+
+    timeSpan.textContent = "Time: 15 PM";
+    tempSpan.textContent = "20.0 C";
+
+    div.appendChild(timeSpan);
+    div.appendChild(img);
+    div.appendChild(tempSpan);
+
+    allDayData.appendChild(div);
+  }
+};
+
+showAllDayForeCastData();
