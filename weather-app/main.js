@@ -167,4 +167,6 @@ const showAllDayForeCastData = () => {
   }
 };
 
-showAllDayForeCastData();
+const foreCastData = document.querySelector(".forcasts__list");
+
+foreCastData.addEventListener("click", showAllDayForeCastData);
